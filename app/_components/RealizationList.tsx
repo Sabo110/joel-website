@@ -1,0 +1,66 @@
+'use client'
+
+import React from 'react'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import RealizationCard from './RealizationCard';
+import img from "@/public/onglerie-image.jpg"; // Remplacez par le chemin de l'image de la galerie
+import img2 from '@/public/makeup-image.jpg'
+import img3 from '@/public/cils-image.jpg'
+
+import { useBreakpoint } from '@/hooks/breakpoint'
+import Slide from './Slide'
+
+export default function RealizationList() {
+    const breakpoint = useBreakpoint()
+    const images: {
+        img: StaticImport,
+        alt: string;
+    }[] = [
+            { img, alt: "Réalisation maquillage 1" },
+            { img: img2, alt: "Réalisation maquillage 2" },
+            { img: img3, alt: "Réalisation ongles 1" },
+            { img, alt: "Réalisation ongles 2" },
+            { img: img2, alt: "Réalisation maquillage 3" },
+            { img: img3, alt: "Réalisation ongles 3" },
+            { img, alt: "Réalisation ongles 2" },
+            { img: img2, alt: "Réalisation maquillage 3" },
+            { img: img3, alt: "Réalisation ongles 3" },
+        ];
+    return (
+        <>
+            {
+                breakpoint === 'lg' ?
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 md:gap-4 gap-8 ">
+                        {images.map((image, index) => (
+                            <RealizationCard
+                                key={index}
+                                img={image.img}
+                                alt={image.alt}
+                            />
+                        ))}
+                    </div> :
+                    breakpoint === 'md' || breakpoint === 'sm' ?
+                        <Slide size='basis-1/2' placeholder='photo'>
+                            {images.map((image, index) => (
+                                <RealizationCard
+                                    key={index}
+                                    img={image.img}
+                                    alt={image.alt}
+                                />
+                            ))}
+                        </Slide> :
+                        <Slide placeholder='photo'>
+                            {images.map((image, index) => (
+                                <RealizationCard
+                                    key={index}
+                                    img={image.img}
+                                    alt={image.alt}
+                                />
+                            ))}
+                        </Slide>
+
+            }
+        </>
+
+    )
+}
