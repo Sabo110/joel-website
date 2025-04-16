@@ -7,11 +7,10 @@ import img from "@/public/onglerie-image.jpg"; // Remplacez par le chemin de l'i
 import img2 from '@/public/makeup-image.jpg'
 import img3 from '@/public/cils-image.jpg'
 
-import { useBreakpoint } from '@/hooks/breakpoint'
+
 import Slide from './Slide'
 
 export default function RealizationList() {
-    const breakpoint = useBreakpoint()
     const images: {
         img: StaticImport,
         alt: string;
@@ -28,38 +27,38 @@ export default function RealizationList() {
         ];
     return (
         <>
-            {
-                breakpoint === 'lg' ?
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 md:gap-4 gap-8 ">
-                        {images.map((image, index) => (
-                            <RealizationCard
-                                key={index}
-                                img={image.img}
-                                alt={image.alt}
-                            />
-                        ))}
-                    </div> :
-                    breakpoint === 'md' || breakpoint === 'sm' ?
-                        <Slide size='basis-1/2' placeholder='photo'>
-                            {images.map((image, index) => (
-                                <RealizationCard
-                                    key={index}
-                                    img={image.img}
-                                    alt={image.alt}
-                                />
-                            ))}
-                        </Slide> :
-                        <Slide placeholder='photo'>
-                            {images.map((image, index) => (
-                                <RealizationCard
-                                    key={index}
-                                    img={image.img}
-                                    alt={image.alt}
-                                />
-                            ))}
-                        </Slide>
+            <div className="lg:grid lg:grid-cols-3 lg:gap-4 hidden">
+                {images.map((image, index) => (
+                    <RealizationCard
+                        key={index}
+                        img={image.img}
+                        alt={image.alt}
+                    />
+                ))}
+            </div>
+            <div className='sm:block lg:hidden hidden'>
+                <Slide size='basis-1/2' placeholder='photo'>
+                    {images.map((image, index) => (
+                        <RealizationCard
+                            key={index}
+                            img={image.img}
+                            alt={image.alt}
+                        />
+                    ))}
+                </Slide>
+            </div>
+            <div className='sm:hidden block'>
+                <Slide placeholder='photo'>
+                    {images.map((image, index) => (
+                        <RealizationCard
+                            key={index}
+                            img={image.img}
+                            alt={image.alt}
+                        />
+                    ))}
+                </Slide>
+            </div>
 
-            }
         </>
 
     )

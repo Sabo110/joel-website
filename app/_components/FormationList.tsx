@@ -6,10 +6,8 @@ import Slide from './Slide'
 import makeup from '@/public/makeup-image.jpg'
 import onglerie from '@/public/onglerie-image.jpg'
 import cils from '@/public/cils-image.jpg'
-import { useBreakpoint } from '@/hooks/breakpoint'
 
 export default function FormationList() {
-    const breakpoint = useBreakpoint()
     const formations = [
         {
             title: "Formation maquillage",
@@ -34,49 +32,52 @@ export default function FormationList() {
             imageSrc: cils,
         },
     ];
+
+    
     return (
         <>
-            {
-                breakpoint === 'lg' ?
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 md:gap-4 gap-8 ">
-                        {formations.map((formation, index) => (
-                            <FormationCard
-                                key={index}
-                                title={formation.title}
-                                description={formation.description}
-                                duration={formation.duration}
-                                price={formation.price}
-                                imageSrc={formation.imageSrc}
-                            />
-                        ))}
-                    </div> :
-                    breakpoint === 'md' || breakpoint === 'sm' ?
-                        <Slide size='basis-1/2' placeholder='formation'>
-                            {formations.map((formation, index) => (
-                                <FormationCard
-                                    key={index}
-                                    title={formation.title}
-                                    description={formation.description}
-                                    duration={formation.duration}
-                                    price={formation.price}
-                                    imageSrc={formation.imageSrc}
-                                />
-                            ))}
-                        </Slide> :
-                        <Slide placeholder='formation'>
-                            {formations.map((formation, index) => (
-                                <FormationCard
-                                    key={index}
-                                    title={formation.title}
-                                    description={formation.description}
-                                    duration={formation.duration}
-                                    price={formation.price}
-                                    imageSrc={formation.imageSrc}
-                                />
-                            ))}
-                        </Slide>
 
-            }
+            <div className="lg:grid lg:grid-cols-3 lg:gap-4 hidden">
+                {formations.map((formation, index) => (
+                    <FormationCard
+                        key={index}
+                        title={formation.title}
+                        description={formation.description}
+                        duration={formation.duration}
+                        price={formation.price}
+                        imageSrc={formation.imageSrc}
+                    />
+                ))}
+            </div>
+            <div className='sm:block lg:hidden hidden'>
+                <Slide size='basis-1/2' placeholder='formation'>
+                    {formations.map((formation, index) => (
+                        <FormationCard
+                            key={index}
+                            title={formation.title}
+                            description={formation.description}
+                            duration={formation.duration}
+                            price={formation.price}
+                            imageSrc={formation.imageSrc}
+                        />
+                    ))}
+                </Slide>
+            </div>
+            <div className='sm:hidden block'>
+                <Slide placeholder='formation poo'>
+                    {formations.map((formation, index) => (
+                        <FormationCard
+                            key={index}
+                            title={formation.title}
+                            description={formation.description}
+                            duration={formation.duration}
+                            price={formation.price}
+                            imageSrc={formation.imageSrc}
+                        />
+                    ))}
+                </Slide>
+            </div>
+
         </>
     )
 }
