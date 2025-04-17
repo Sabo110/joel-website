@@ -4,7 +4,7 @@ import AboutSectionLeft from "./AboutSectionLeft";
 
 export default function AboutSection() {
     return (
-        <section className=" py-8 bg-secondary">
+        <section className=" py-8">
             <ContainerForAll className="flex flex-col-reverse gap-8 px-4 lg:flex-row">
                 <AboutSectionLeft />
                 <AboutSectionRight />

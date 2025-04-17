@@ -31,7 +31,7 @@ export default function AboutSectionRight() {
     ]
     return (
         <div className='lg:w-1/2 space-y-6'>
-            <h2 className='text-center lg:text-start'>À Propos de Charming Make up</h2>
+            <h3 className='text-center lg:text-start'>À Propos de Charming Make up</h3>
             {
                 aboutText.length <= 200 ? (
                     <p className=''>

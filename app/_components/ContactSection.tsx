@@ -26,9 +26,9 @@ export default function ContactSection() {
     return (
         <section className="py-8 bg-secondary" id="contact">
             <ContainerForAll className="px-4 space-y-6">
-                <h2 className="text-center">
+                <h3 className="text-center">
                     Contactez-moi
-                </h2>
+                </h3>
                 <p className="">
                     Vous pouvez me contacter via WhatsApp, par téléphone ou par email. Je
                     suis disponible pour répondre à toutes vos questions !
@@ -43,16 +43,15 @@ export default function ContactSection() {
                             className="flex flex-col items-center bg-background rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
                         >
                             {method.icon}
-                            <h3 className="">
+                            <h4 className="">
                                 {method.title}
-                            </h3>
+                            </h4>
                             <p className="text-center">
                                 {method.description}
                             </p>
                         </a>
                     ))}
                 </div>
-                <Cta />
             </ContainerForAll>
         </section>
     );

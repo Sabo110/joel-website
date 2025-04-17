@@ -34,17 +34,17 @@ export default function FaqSection() {
         <section className="py-8">
             <ContainerForAll className="px-4 space-y-6">
                 <div>
-                    <h2 className=" text-center">Question Frequentes</h2>
+                    <h3 className=" text-center">Question Frequentes</h3>
                 </div>
                 <div>
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem value={`item-${index}`} key={index}>
                                 <AccordionTrigger className="cursor-pointer">
-                                    {faq.question}
+                                    <h4>{faq.question}</h4>
                                 </AccordionTrigger>
                                 <AccordionContent className="">
-                                    {faq.answer}
+                                    <p>{faq.answer}</p>
                                 </AccordionContent>
                             </AccordionItem>
                         ))}

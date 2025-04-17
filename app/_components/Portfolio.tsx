@@ -7,9 +7,9 @@ export default function Portfolio() {
     return (
         <section className="pb-16 pt-8 bg-secondary">
             <ContainerForAll className="px-4 space-y-6">
-                <h2 className="text-center">
+                <h3 className="text-center">
                     Portfolio
-                </h2>
+                </h3>
                 <RealizationList />
             </ContainerForAll>
         </section>

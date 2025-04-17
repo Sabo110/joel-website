@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Réseaux sociaux */}
           <div>
-            <h3 className="text-lg font-bold  mb-4">Réseaux sociaux</h3>
+            <p className="text-lg font-bold  mb-4">Réseaux sociaux</p>
             <div className="flex justify-center md:justify-start gap-6">
               <a
                 href="https://www.facebook.com/CharmingMakeup.Lj"
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Localisation */}
           <div>
-            <h3 className="text-lg font-bold  mb-4">Localisation</h3>
+            <p className="text-lg font-bold  mb-4">Localisation</p>
             <div className="flex items-center justify-center md:justify-start gap-2 ">
               <FaMapMarkerAlt className="text-2xl " />
               <p className="text-sm">

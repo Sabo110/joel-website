@@ -48,7 +48,7 @@ export default function Header() {
         >
             <div className="container mx-auto px-6 lg:px-5 flex items-center justify-between sm:h-24 h-20">
                 {/* Logo */}
-                <div className="text-2xl font-bold ">
+                <div className="font-bold ">
                     <a href="#home" className="">
                     Charming Makeup<span className="">.</span>
                     </a>

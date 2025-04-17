@@ -38,7 +38,7 @@ export default function SuccesStory() {
     return (
         <section className=" py-8 bg-secondary">
             <ContainerForAll className='px-4 space-y-6'>
-                <h2 className="text-center">Success Stories</h2>
+                <h3 className="text-center">Success Stories</h3>
                 <p className="">
                     Découvrez les incroyables transformations de mes élèves et clientes ✨
                 </p>

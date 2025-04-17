@@ -51,7 +51,7 @@ export default function TestimonialCard({ name, review, rating, time }: Testimon
   const initial = name.charAt(0);
   const avatarBg = getBgColorFromInitial(initial);
   return (
-    <div className="shadow-md bg-white p-6 space-y-3 text-gray-800 border border-border ">
+    <div className="shadow-md bg-background p-6 space-y-3 border border-border ">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <Avatar>
@@ -59,7 +59,7 @@ export default function TestimonialCard({ name, review, rating, time }: Testimon
           </Avatar>
           <div>
             <p className="font-semibold"> {name} </p>
-            <p className="text-sm text-gray-500"> {time} </p>
+            <p className=""> {time} </p>
           </div>
         </div>
 
