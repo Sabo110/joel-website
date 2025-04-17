@@ -37,7 +37,7 @@ export default function FormationList() {
     return (
         <>
 
-            <div className="lg:grid lg:grid-cols-3 lg:gap-4 hidden">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-8 hidden">
                 {formations.map((formation, index) => (
                     <FormationCard
                         key={index}
@@ -64,7 +64,7 @@ export default function FormationList() {
                 </Slide>
             </div>
             <div className='sm:hidden block'>
-                <Slide placeholder='formation poo'>
+                <Slide placeholder='formation'>
                     {formations.map((formation, index) => (
                         <FormationCard
                             key={index}

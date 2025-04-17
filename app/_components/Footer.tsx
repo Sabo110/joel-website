@@ -5,42 +5,42 @@ export default function Footer() {
     <footer className="py-12">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Conteneur principal */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
           {/* Navigation */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold  mb-4">Navigation</h3>
             <nav>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-4 ">
                 <li>
-                  <a href="#home" className="">
+                  <a href="#home" className="link-underline">
                     Accueil
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className=" ">
+                  <a href="#about" className="link-underline">
                     À propos
                   </a>
                 </li>
                 <li>
-                  <a href="#formations" className=" ">
+                  <a href="#formations" className="link-underline ">
                     Formations
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className=" ">
+                  <a href="#contact" className=" link-underline">
                     Contact
                   </a>
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> */}
 
           {/* Réseaux sociaux */}
           <div>
             <h3 className="text-lg font-bold  mb-4">Réseaux sociaux</h3>
             <div className="flex justify-center md:justify-start gap-6">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/CharmingMakeup.Lj"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

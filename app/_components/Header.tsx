@@ -1,7 +1,6 @@
 "use client"; // Nécessaire pour utiliser des hooks comme useState et useEffect
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 export default function Header() {
     const menus = [
@@ -46,7 +45,7 @@ export default function Header() {
             className={`sticky top-0 left-0 w-full z-50 bg-background  ${isScrolled ? " shadow-lg" : ""
                 }`}
         >
-            <div className="container mx-auto px-6 lg:px-5 flex items-center justify-between h-24">
+            <div className="container mx-auto px-6 lg:px-5 flex items-center justify-between sm:h-24 h-20">
                 {/* Logo */}
                 <div className="text-2xl font-bold ">
                     <a href="#home" className="">
@@ -55,7 +54,7 @@ export default function Header() {
                 </div>
 
                 {/* Menu de navigation */}
-                <nav className="hidden lg:flex lg:items-center space-x-6 lg:space-x-8">
+                {/* <nav className="hidden lg:flex lg:items-center space-x-6 lg:space-x-8">
                     {menus.map((menu, index) => (
                         <a
                             href={menu.href}
@@ -65,11 +64,11 @@ export default function Header() {
                             {menu.text}
                         </a>
                     ))}
-                </nav>
+                </nav> */}
 
 
                 {/* Bouton CTA */}
-                <div className="hidden lg:block">
+                <div className="hidden sm:block">
                     <a
                         href="#contact"
                         className="bg-primary text-primary-foreground py-3 px-6 rounded-lg text-lg font-semibold shadow-lg"
@@ -80,7 +79,7 @@ export default function Header() {
                 </div>
 
                 {/* Menu hamburger pour mobile */}
-                <button
+                {/* <button
                     className="lg:hidden focus:outline-none"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
@@ -98,7 +97,7 @@ export default function Header() {
                             d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                         />
                     </svg>
-                </button>
+                </button> */}
             </div>
 
             {/* Menu mobile */}

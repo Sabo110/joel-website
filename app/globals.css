@@ -118,9 +118,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  font-family: var(--font-poppins);
 }
 
 .link-underline {
@@ -134,7 +139,8 @@
   left: 0;
   width: 0;
   height: 3px;
-  background-color: var(--color-primary); /* à adapter selon ta config */
+  background-color: var(--color-primary);
+  /* à adapter selon ta config */
   transition: all 0.5s;
 }
 
@@ -142,3 +148,27 @@
   width: 100%;
 }
 
+
+h1 {}
+
+h2 {}
+
+p {}
+
+.hero-title {
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+
+.cta {
+  font-size: clamp(16px, 4vw, 24px);
+  padding: 12px 24px;
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}

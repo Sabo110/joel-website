@@ -24,6 +24,9 @@ export default function RealizationList() {
             { img, alt: "Réalisation ongles 2" },
             { img: img2, alt: "Réalisation maquillage 3" },
             { img: img3, alt: "Réalisation ongles 3" },
+            { img, alt: "Réalisation ongles 2" },
+            { img: img2, alt: "Réalisation maquillage 3" },
+            { img: img3, alt: "Réalisation ongles 3" },
         ];
     return (
         <>

@@ -7,6 +7,8 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
     type CarouselApi,
 } from "@/components/ui/carousel"
 import { cn } from '@/lib/utils';
@@ -18,7 +20,7 @@ type SlideProps = {
     size?: string
     placeholder?: string
 }
-export default function Slide({ children, size, placeholder='slide' }: SlideProps) {
+export default function Slide({ children, size, placeholder = 'slide' }: SlideProps) {
     const [api, setApi] = React.useState<CarouselApi>()
     const [current, setCurrent] = React.useState(0)
     const [count, setCount] = React.useState(0)
@@ -36,8 +38,8 @@ export default function Slide({ children, size, placeholder='slide' }: SlideProp
         })
     }, [api])
     return (
-        <div>
-            <Carousel className="w-full" setApi={setApi}>
+        <div className=' relative'>
+            <Carousel className="w-full " setApi={setApi}>
                 <CarouselContent>
                     {
                         React.Children.map(children, (child, index) => (
@@ -47,10 +49,15 @@ export default function Slide({ children, size, placeholder='slide' }: SlideProp
                         ))
                     }
                 </CarouselContent>
+                <div className="mt-4 text-center text-sm text-muted-foreground">
+                    {placeholder} {current} sur {count}
+                </div>
+                <div className=' relative mt-10'>
+                    <CarouselPrevious className='left-1/4' />
+                    <CarouselNext className='right-1/4' />
+                </div>
             </Carousel>
-            <div className="py-2 text-center text-sm text-muted-foreground">
-                {placeholder} {current} sur {count}
-            </div>
+
         </div>
 
     )

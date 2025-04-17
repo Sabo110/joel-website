@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
@@ -17,35 +18,40 @@ export default function FormationCard({
   imageSrc,
 }: FormationCardProps) {
   return (
-    <div className="rounded-lg shadow-lg border hover:shadow-2xl transition-shadow duration-300 flex flex-col bg-background ">
+    <div className="space-y-4">
       {/* Image */}
       <div className="relative w-full">
         <Image
           src={imageSrc}
           alt={`Image de ${title}`}
           placeholder="blur"
-          className="rounded-t-lg"
+          className=""
         />
       </div>
 
       {/* Contenu principal */}
-      <div className="p-6 flex flex-col justify-between flex-grow">
-        <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-3">
+      <div className="flex flex-col justify-between flex-grow">
+        <div className="space-y-4">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
             {title}
           </h3>
-          <p className="text-sm sm:text-base md:text-lg mb-4">
+          <p className="text-sm sm:text-base md:text-lg">
             {description}
           </p>
 
           {/* Badge durée */}
-          <div className="inline-block text-xs sm:text-sm md:text-base font-medium py-1 rounded-lg  mb-2">
+          {/* <div className="inline-block text-xs sm:text-sm md:text-base font-medium py-1 rounded-lg  mb-2">
             Durée : {duration}
-          </div>
+          </div> */}
 
           {/* Prix */}
-          <div className="text-base sm:text-lg md:text-xl font-semibold">
+          {/* <div className="text-base sm:text-lg md:text-xl font-semibold">
             {price} XAF
+          </div> */}
+          <div>
+            <a href="#contact" className="block w-fit bg-primary text-primary-foreground py-2 px-5 text-lg font-semibold text-center">
+              En savoir plus
+            </a>
           </div>
         </div>
       </div>
