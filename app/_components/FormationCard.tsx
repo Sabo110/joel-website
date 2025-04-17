@@ -32,24 +32,24 @@ export default function FormationCard({
       {/* Contenu principal */}
       <div className="flex flex-col justify-between flex-grow">
         <div className="space-y-4">
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
+          <h3 className="uppercase">
             {title}
           </h3>
-          <p className="text-sm sm:text-base md:text-lg">
+          <p className="">
             {description}
           </p>
 
           {/* Badge durée */}
-          {/* <div className="inline-block text-xs sm:text-sm md:text-base font-medium py-1 rounded-lg  mb-2">
+          <div className="">
             Durée : {duration}
-          </div> */}
+          </div>
 
           {/* Prix */}
-          {/* <div className="text-base sm:text-lg md:text-xl font-semibold">
+          <div className="">
             {price} XAF
-          </div> */}
+          </div>
           <div>
-            <a href="#contact" className="block w-fit bg-primary text-primary-foreground py-2 px-5 text-lg font-semibold text-center">
+            <a href="#contact" className="bg-gradient-to-br from-secondary to-muted block w-fit py-2 px-5 text-lg font-semibold text-center">
               En savoir plus
             </a>
           </div>

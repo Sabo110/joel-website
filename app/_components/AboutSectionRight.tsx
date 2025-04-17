@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils'
 import React from 'react'
 import PopoverDemo from './PopoverDemo';
 import { truncateText } from '@/lib/text';
@@ -8,10 +7,8 @@ import certification from '@/public/certification.png'; // Remplacez par le chem
 import experience from '@/public/experience.png'; // Remplacez par le chemin de l'image de la section "À propos"
 import Image from 'next/image';
 
-type AboutSectionRightProps = {
-    className?: string,
-}
-export default function AboutSectionRight({ className }: AboutSectionRightProps) {
+
+export default function AboutSectionRight() {
     const aboutText = `Passionnée par l'art du maquillage depuis plus de 10 ans, je partage mon expertise à travers des formations personnalisées. 
     Mon objectif est de vous aider à développer vos compétences et à réaliser vos rêves dans l'industrie de la beauté.`;
     const options = [
@@ -33,11 +30,11 @@ export default function AboutSectionRight({ className }: AboutSectionRightProps)
         }
     ]
     return (
-        <div className={cn(className, 'space-y-6')}>
+        <div className='lg:w-1/2 space-y-6'>
             <h2 className='text-center lg:text-start'>À Propos de Charming Make up</h2>
             {
                 aboutText.length <= 200 ? (
-                    <p className='lg:text-xl'>
+                    <p className=''>
                         {aboutText}
                     </p>) : (
                     <p className=''>
@@ -46,7 +43,7 @@ export default function AboutSectionRight({ className }: AboutSectionRightProps)
                 )
 
             }
-            <div className='grid sm:grid-cols-2 sm:gap-6 gap-6'>
+            <div className='grid gap-6 sm:grid-cols-2'>
                 {
                     options.map((option, index) => (
                         <div className='flex items-center gap-4' key={index}>

@@ -8,6 +8,7 @@ import Portfolio from "./_components/Portfolio";
 import Header from "./_components/Header";
 import HeroSection from "./_components/HeroSection";
 import TestimonialsSection from "./_components/TestimonialsSection";
+import SuccesStory from "./_components/SuccesStory";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FormationsSection />
       <Portfolio />
       <TestimonialsSection />
+      <SuccesStory />
       <FaqSection />
       <ContactSection />
       <Footer />

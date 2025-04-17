@@ -1,10 +1,10 @@
-import FaqItem from "./FaqItem";
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import ContainerForAll from "./ContainerForAll";
 
 export default function FaqSection() {
     const faqs = [
@@ -31,27 +31,27 @@ export default function FaqSection() {
     ];
 
     return (
-        <section className="py-20">
-            <div className="container mx-auto px-4 lg:px-20">
+        <section className="py-8">
+            <ContainerForAll className="px-4 space-y-6">
                 <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-12 text-center">Question Frequentes</h2>
+                    <h2 className=" text-center">Question Frequentes</h2>
                 </div>
                 <div>
-                <Accordion type="single" collapsible className="w-full">
-    {faqs.map((faq, index) => (
-        <AccordionItem value={`item-${index}`} key={index}>
-            <AccordionTrigger className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 cursor-pointer">
-                {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
-                {faq.answer}
-            </AccordionContent>
-        </AccordionItem>
-    ))}
-</Accordion>
+                    <Accordion type="single" collapsible className="w-full">
+                        {faqs.map((faq, index) => (
+                            <AccordionItem value={`item-${index}`} key={index}>
+                                <AccordionTrigger className="cursor-pointer">
+                                    {faq.question}
+                                </AccordionTrigger>
+                                <AccordionContent className="">
+                                    {faq.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
 
                 </div>
-            </div>
+            </ContainerForAll>
         </section>
     );
 }

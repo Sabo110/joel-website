@@ -1,20 +1,16 @@
-import TestimonialCard from "./TestimonialCard";
-import testimonialone from "@/public/testimonial-one.png";
-import testimonialtwo from "@/public/testimonial-two.png";
-import testimonialthree from "@/public/testimonial-three.png";
-import { time } from "console";
+import ContainerForAll from "./ContainerForAll";
 import TestimonialList from "./TestimonialList";
 
 export default function TestimonialsSection() {
 
   return (
-    <section className="py-20 bg-secondary text-secondary-foreground" id="testimonials">
-      <div className="container mx-auto px-4 lg:px-5 xl:px-20 2xl:px-40">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center">
+    <section className=" pb-16 pt-8">
+      <ContainerForAll className="px-4 space-y-6">
+        <h2 className="text-center">
           Témoignages Clients
         </h2>
         <TestimonialList />
-      </div>
+      </ContainerForAll>
     </section>
   );
 }

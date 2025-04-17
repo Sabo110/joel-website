@@ -6,34 +6,6 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-20">
         {/* Conteneur principal */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-          {/* Navigation */}
-          {/* <div>
-            <h3 className="text-lg font-bold  mb-4">Navigation</h3>
-            <nav>
-              <ul className="flex flex-col gap-4 ">
-                <li>
-                  <a href="#home" className="link-underline">
-                    Accueil
-                  </a>
-                </li>
-                <li>
-                  <a href="#about" className="link-underline">
-                    À propos
-                  </a>
-                </li>
-                <li>
-                  <a href="#formations" className="link-underline ">
-                    Formations
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className=" link-underline">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div> */}
 
           {/* Réseaux sociaux */}
           <div>
@@ -83,13 +55,13 @@ export default function Footer() {
 
         {/* Mentions légales et auteur */}
         <div className="mt-8 text-center text-sm ">
-          <a href="#" className="">
+          <span className="">
             Mentions légales
-          </a>
+          </span>
           <p className="mt-2">
             Réalisé par <span className=" font-bold">Yoba Sabo</span>
           </p>
-          <p className="mt-2 ">
+          <p className="mt-2">
             © {new Date().getFullYear()} Tous droits réservés.
           </p>
         </div>

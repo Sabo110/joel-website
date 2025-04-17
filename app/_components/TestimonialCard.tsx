@@ -1,12 +1,9 @@
-import { div } from "motion/react-client";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/avatar"
-import { FaStar, FaCheckCircle, FaGoogle } from "react-icons/fa";
 import googleLogo from '@/public/google.svg'
 import { cn } from "@/lib/utils";
 
@@ -54,7 +51,7 @@ export default function TestimonialCard({ name, review, rating, time }: Testimon
   const initial = name.charAt(0);
   const avatarBg = getBgColorFromInitial(initial);
   return (
-    <div className=" rounded-xl shadow-md bg-white p-6 space-y-3 text-gray-800 border border-gray-200 ">
+    <div className="shadow-md bg-white p-6 space-y-3 text-gray-800 border border-border ">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <Avatar>

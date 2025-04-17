@@ -30,7 +30,7 @@ export default function RealizationList() {
         ];
     return (
         <>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-4 hidden">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-8 hidden">
                 {images.map((image, index) => (
                     <RealizationCard
                         key={index}

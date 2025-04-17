@@ -1,6 +1,7 @@
 "use client"; // Nécessaire pour utiliser des hooks comme useState et useEffect
 
 import { useState, useEffect } from "react";
+import Cta from "./Cta";
 
 export default function Header() {
     const menus = [
@@ -42,7 +43,7 @@ export default function Header() {
 
     return (
         <header
-            className={`sticky top-0 left-0 w-full z-50 bg-background  ${isScrolled ? " shadow-lg" : ""
+            className={`fixed top-0 left-0 w-full z-50 text-background transition-all duration-500 ${isScrolled ? "bg-background text-foreground  shadow-2xl" : ""
                 }`}
         >
             <div className="container mx-auto px-6 lg:px-5 flex items-center justify-between sm:h-24 h-20">
@@ -53,53 +54,12 @@ export default function Header() {
                     </a>
                 </div>
 
-                {/* Menu de navigation */}
-                {/* <nav className="hidden lg:flex lg:items-center space-x-6 lg:space-x-8">
-                    {menus.map((menu, index) => (
-                        <a
-                            href={menu.href}
-                            className="text-base lg:text-lg font-medium link-underline"
-                            key={index}
-                        >
-                            {menu.text}
-                        </a>
-                    ))}
-                </nav> */}
 
 
                 {/* Bouton CTA */}
-                <div className="hidden sm:block">
-                    <a
-                        href="#contact"
-                        className="bg-primary text-primary-foreground py-3 px-6 rounded-lg text-lg font-semibold shadow-lg"
-                    >
-                        Réserver une formation
-                    </a>
+                <div className="hidden lg:block"><Cta /></div>
 
-                </div>
-
-                {/* Menu hamburger pour mobile */}
-                {/* <button
-                    className="lg:hidden focus:outline-none"
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-                        />
-                    </svg>
-                </button> */}
             </div>
-
             {/* Menu mobile */}
             {isMenuOpen && (
                 <div
