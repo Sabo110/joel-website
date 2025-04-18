@@ -34,8 +34,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Formations en Maquillage et Onglerie - Joelle",
-  description: "Découvrez les formations professionnelles en maquillage et onglerie proposées par [Nom de la cliente]. Apprenez les techniques modernes pour révéler votre beauté.",
+  title: "Charming Make Up – Formations Maquillage, Onglerie & Cils",
+  description: "Charming Make Up propose des formations en maquillage, onglerie et extension de cils. Découvrez l’atelier, les témoignages et les success stories.",
 };
 
 export default function RootLayout({

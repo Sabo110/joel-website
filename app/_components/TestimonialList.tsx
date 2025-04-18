@@ -5,44 +5,43 @@ import Slide from './Slide';
 export default function TestimonialList() {
     const testimonials = [
         {
-            name: "Sarah Dupont",
-            review: "Une expérience incroyable ! Joelle est une formatrice exceptionnelle.",
-            rating: 5,
-            time: "il y' a 3 mois",
+          name: "Sarah Dupont",
+          review: "Une expérience incroyable ! Joelle est une formatrice en maquillage exceptionnelle qui m'a appris des techniques professionnelles. Les cours sont clairs et adaptés à tous niveaux.",
+          rating: 5,
+          time: "il y a 3 mois",
         },
         {
-            name: "Marc Lefevre",
-            review: "Les formations sont très complètes et bien expliquées. Merci Joelle !",
-            rating: 4,
-            time: "il y' a 6 mois"
+          name: "Marc Lefevre",
+          review: "Les formations en maquillage de Joelle sont très complètes et bien expliquées. J’ai acquis des compétences pratiques et utiles pour ma carrière. Merci Joelle pour ta pédagogie !",
+          rating: 4,
+          time: "il y a 6 mois",
         },
         {
-            name: "Claire Moreau",
-            review: "J'ai beaucoup appris et je recommande vivement ses formations.",
-            rating: 5,
-            time: "il y'a 8 mois"
+          name: "Claire Moreau",
+          review: "J'ai beaucoup appris grâce à la formation maquillage de Joelle et je recommande vivement ses formations professionnelles pour tous ceux qui veulent se perfectionner.",
+          rating: 5,
+          time: "il y a 8 mois",
         },
         {
-            name: "Inès Diallo",
-            review: "Joelle a complètement changé ma façon de me maquiller. Aujourd'hui je me sens belle et confiante !",
-            rating: 5,
-            time: "il y'a 1 mois"
+          name: "Inès Diallo",
+          review: "Joelle a complètement changé ma façon de me maquiller. Aujourd'hui je me sens belle, confiante, et je maîtrise des techniques de maquillage pro grâce à sa formation.",
+          rating: 5,
+          time: "il y a 1 mois",
         },
         {
-            name: "Léa Martin",
-            review: "Une formation très pro, accessible même pour les débutantes comme moi. Je recommande sans hésiter.",
-            rating: 4,
-            time: "il y'a 2 mois"
+          name: "Léa Martin",
+          review: "Une formation maquillage très professionnelle, accessible même pour les débutantes comme moi. Joelle rend l’apprentissage facile et amusant. Je recommande sans hésiter.",
+          rating: 4,
+          time: "il y a 2 mois",
         },
         {
-            name: "Sophie Bernard",
-            review: "Joelle est à l’écoute, bienveillante et passionnée. J’ai adoré chaque module !",
-            rating: 4,
-            time: "il y'a 5 mois"
-        }
-
-    ];
-    
+          name: "Sophie Bernard",
+          review: "Joelle est à l’écoute, bienveillante et passionnée. Chaque module de sa formation maquillage m'a permis d’améliorer ma technique. J’ai adoré chaque session.",
+          rating: 4,
+          time: "il y a 5 mois",
+        },
+      ]
+      
     return (
         <>
             <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 hidden">

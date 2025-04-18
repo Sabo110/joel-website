@@ -9,28 +9,28 @@ export default function SuccesStory() {
         {
             name: "Aïcha",
             description:
-                "Avant je ne savais même pas me maquiller correctement. Aujourd’hui, je propose mes propres prestations à domicile 🥹",
+                "Avant, je ne savais même pas me maquiller correctement. Grâce à la formation en maquillage de Charming Make Up, aujourd'hui, je propose mes propres prestations à domicile. Un vrai changement de carrière ! 🥹",
             before: succes1,
             after: succes1,
         },
         {
             name: "Fatou",
             description:
-                "Grâce à la formation, j’ai enfin appris à me maquiller selon ma morphologie. Je me sens tellement plus confiante.",
+                "Grâce à la formation maquillage personnalisée de Charming Make Up, j’ai enfin appris à maquiller mon visage selon ma morphologie. Je me sens tellement plus confiante et épanouie.",
             before: succes2,
             after: succes2,
         },
         {
             name: "Nadia",
             description:
-                "Je ne pensais pas que le maquillage pouvait changer autant ma manière de me voir. Merci Joelle pour cette révélation 💖",
+                "Je ne pensais pas que le maquillage pouvait transformer autant mon image de soi. Merci Joelle et l'atelier Charming Make Up pour cette véritable révélation 💖.",
             before: succes1,
             after: succes1,
         },
         {
             name: "Mariam",
             description:
-                "Je suis passée de débutante totale à maquilleuse freelance en quelques mois. Une vraie renaissance ✨",
+                "De débutante totale à maquilleuse freelance en quelques mois grâce à Charming Make Up. Une formation complète qui m’a permis de renaître professionnellement ✨.",
             before: succes2,
             after: succes2,
         },

@@ -32,7 +32,7 @@ export default function FormationCard({
       {/* Contenu principal */}
       <div className="flex flex-col justify-between flex-grow">
         <div className="space-y-4">
-          <h4 className="uppercase font-semibold">
+          <h4 className="uppercase">
             {title}
           </h4>
           <p className="">

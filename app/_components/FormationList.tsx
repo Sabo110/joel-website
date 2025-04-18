@@ -8,30 +8,31 @@ import cils from '@/public/cils-image.jpg'
 export default function FormationList() {
     const formations = [
         {
-            title: "Formation maquillage",
-            description: "Apprenez les techniques de maquillage professionnel pour sublimer chaque visage.",
-            duration: "3 jours",
-            price: "30 000XAF",
+            title: "Formation maquillage professionnelle",
+            description: "Apprenez les techniques de maquillage professionnel pour sublimer tous les types de visages. Formation 100 % présentielle à Charming Make Up.",
+            duration: "1 mois",
+            price: "30 000 XAF",
             whatsappLink: "https://wa.me/1234567890?text=Je%20souhaite%20en%20savoir%20plus%20sur%20la%20formation%20maquillage",
             imageSrc: makeup,
         },
         {
-            title: "Formation ongles",
-            description: "Maîtrisez l'art de la pose d'ongles en gel et des designs créatifs.",
-            duration: "5 jours",
-            price: "50 000XAF",
+            title: "Formation onglerie",
+            description: "Maîtrisez la pose d'ongles en gel, le nail art et les techniques modernes d’onglerie. Formation intensive à Charming Make Up.",
+            duration: "1 mois",
+            price: "50 000 XAF",
             imageSrc: onglerie,
-        },
+        }
+        ,
         {
             title: "Formation extensions de cils",
-            description: "Devenez expert(e) en extensions de cils pour un regard captivant.",
-            duration: "2 jours",
-            price: "25 000XAF",
+            description: "Devenez expert(e) en extensions de cils : méthode cil à cil, volume russe et conseils pros. Formation 100 % pratique à Charming Make Up.",
+            duration: "1 mois",
+            price: "25 000 XAF",
             imageSrc: cils,
         },
     ];
 
-    
+
     return (
         <>
 

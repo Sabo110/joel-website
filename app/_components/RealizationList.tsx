@@ -15,18 +15,18 @@ export default function RealizationList() {
         img: StaticImport,
         alt: string;
     }[] = [
-            { img, alt: "Réalisation maquillage 1" },
-            { img: img2, alt: "Réalisation maquillage 2" },
-            { img: img3, alt: "Réalisation ongles 1" },
-            { img, alt: "Réalisation ongles 2" },
-            { img: img2, alt: "Réalisation maquillage 3" },
-            { img: img3, alt: "Réalisation ongles 3" },
-            { img, alt: "Réalisation ongles 2" },
-            { img: img2, alt: "Réalisation maquillage 3" },
-            { img: img3, alt: "Réalisation ongles 3" },
-            { img, alt: "Réalisation ongles 2" },
-            { img: img2, alt: "Réalisation maquillage 3" },
-            { img: img3, alt: "Réalisation ongles 3" },
+            { img, alt: "Pose d’ongles en gel rose nude – Charming Make Up" },
+            { img: img2, alt: "Maquillage de soirée éclatant – Réalisation par Charming Make Up" },
+            { img: img3, alt: "Extension de cils volume russe – Formation pratique" },
+            { img, alt: "Manucure artistique avec effet marbre – Atelier Charming Make Up" },
+            { img: img2, alt: "Maquillage naturel pour peau foncée – Look professionnel" },
+            { img: img3, alt: "Pose d’extensions de cils cil à cil – Résultat naturel" },
+            { img, alt: "Ongles en gel avec strass brillants – Design élégant" },
+            { img: img2, alt: "Maquillage nude avec sourcils parfaitement dessinés" },
+            { img: img3, alt: "Extension de cils effet œil de biche – Technique maîtrisée" },
+            { img, alt: "Pose d’ongles babyboomer – Finition professionnelle" },
+            { img: img2, alt: "Maquillage glamour avec lèvres rouges intenses" },
+            { img: img3, alt: "Extensions de cils avec volume mixte – Formation Charming Make Up" },
         ];
     return (
         <>
