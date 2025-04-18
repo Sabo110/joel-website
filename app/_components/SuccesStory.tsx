@@ -36,7 +36,7 @@ export default function SuccesStory() {
         },
     ];
     return (
-        <section className=" py-8 bg-secondary">
+        <section className="py-20">
             <ContainerForAll className='px-4 space-y-6'>
                 <h3 className="text-center">Success Stories</h3>
                 <p className="">
@@ -47,7 +47,7 @@ export default function SuccesStory() {
                     {stories.map((story, i) => (
                         <div
                             key={i}
-                            className="bg-white p-6 shadow-md space-y-4 text-left"
+                            className="border border-secomdary p-6 shadow-2xl space-y-4 text-left"
                         >
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
@@ -55,7 +55,7 @@ export default function SuccesStory() {
                                     <Image
                                         src={story.before}
                                         alt={`Avant ${story.name}`}
-
+                                        placeholder='blur'
                                         className="object-cover"
                                     />
                                 </div>
@@ -64,13 +64,13 @@ export default function SuccesStory() {
                                     <Image
                                         src={story.after}
                                         alt={`Après ${story.name}`}
-
+                                        placeholder='blur'
                                         className=" object-cover"
                                     />
                                 </div>
                             </div>
                             <p className="font-semibold">{story.name}</p>
-                            <p className=" text-gray-700 italic">"{story.description}"</p>
+                            <p className="  italic">"{story.description}"</p>
                         </div>
                     ))}
                 </div>

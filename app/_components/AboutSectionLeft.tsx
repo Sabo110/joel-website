@@ -9,7 +9,6 @@ export default function AboutSectionLeft() {
                 src={img}
                 placeholder="blur"
                 alt="Image de la section à propos de Charming Makeup"
-                className=""
             />
         </div>
     )

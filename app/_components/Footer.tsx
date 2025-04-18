@@ -2,7 +2,7 @@ import { FaFacebook, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/
 
 export default function Footer() {
   return (
-    <footer className="py-12">
+    <footer className="py-12 bg-primary text-secondary">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Conteneur principal */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">

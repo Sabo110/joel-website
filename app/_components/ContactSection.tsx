@@ -24,7 +24,7 @@ export default function ContactSection() {
         }
     ]
     return (
-        <section className="py-8 bg-secondary" id="contact">
+        <section className="py-20" id="contact">
             <ContainerForAll className="px-4 space-y-6">
                 <h3 className="text-center">
                     Contactez-moi

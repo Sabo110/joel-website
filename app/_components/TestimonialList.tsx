@@ -45,7 +45,7 @@ export default function TestimonialList() {
     
     return (
         <>
-            <div className="lg:grid lg:grid-cols-3 gap-8 hidden">
+            <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 hidden">
                 {testimonials.map((testimonial, index) => (
                     <TestimonialCard
                         key={index}

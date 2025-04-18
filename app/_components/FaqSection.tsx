@@ -31,7 +31,7 @@ export default function FaqSection() {
     ];
 
     return (
-        <section className="py-8">
+        <section className="py-20 bg-secondary">
             <ContainerForAll className="px-4 space-y-6">
                 <div>
                     <h3 className=" text-center">Question Frequentes</h3>

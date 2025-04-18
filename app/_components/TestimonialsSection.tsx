@@ -4,7 +4,7 @@ import TestimonialList from "./TestimonialList";
 export default function TestimonialsSection() {
 
   return (
-    <section className=" pb-16 pt-8">
+    <section className=" lg:pb-16 lg:pt-20 lg:min-h-screen min-h-[550px] flex items-center bg-secondary">
       <ContainerForAll className="px-4 space-y-6">
         <h3 className="text-center">
           Témoignages Clients

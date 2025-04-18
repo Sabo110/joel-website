@@ -32,7 +32,7 @@ export default function FormationCard({
       {/* Contenu principal */}
       <div className="flex flex-col justify-between flex-grow">
         <div className="space-y-4">
-          <h4 className="uppercase">
+          <h4 className="uppercase font-semibold">
             {title}
           </h4>
           <p className="">
@@ -49,7 +49,7 @@ export default function FormationCard({
             {price} XAF
           </div>
           <div>
-            <a href="#contact" className="bg-secondary text-secondary-foreground block w-fit py-2 px-5 text-lg font-semibold text-center">
+            <a href="#contact" className="mb-4 ms-1 bg-background text-secondary-foreground outline-1 outline-primary block w-fit py-2 px-5 text-lg font-semibold text-center">
               En savoir plus
             </a>
           </div>
