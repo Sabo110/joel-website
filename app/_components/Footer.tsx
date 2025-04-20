@@ -1,4 +1,5 @@
-import { FaFacebook, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { contactMethods } from "@/data/contactMethods";
 
 export default function Footer() {
   return (
@@ -9,45 +10,30 @@ export default function Footer() {
 
           {/* Réseaux sociaux */}
           <div>
-            <p className="text-lg font-bold  mb-4">Réseaux sociaux</p>
+            <p className="mb-4">Contactez-moi</p>
             <div className="flex justify-center md:justify-start gap-6">
-              <a
-                href="https://www.facebook.com/CharmingMakeup.Lj"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className=""
-              >
-                <FaFacebook className="text-2xl" />
-              </a>
-              <a
-                href="https://wa.me/1234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className=""
-              >
-                <FaWhatsapp className="text-2xl" />
-              </a>
-              <a
-                href="mailto:joelle@example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Email"
-                className=""
-              >
-                <FaEnvelope className="text-2xl" />
-              </a>
+              {contactMethods.map((method, index) => (
+                <a
+                  key={index}
+                  href={method.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={method.label}
+                  className=""
+                >
+                  {<method.icon className="text-2xl hover:text-secondary transition duration-300" />}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Localisation */}
           <div>
-            <p className="text-lg font-bold  mb-4">Localisation</p>
+            <p className="mb-4">Localisation</p>
             <div className="flex items-center justify-center md:justify-start gap-2 ">
               <FaMapMarkerAlt className="text-2xl " />
               <p className="text-sm">
-                Localisation : <span className=" font-medium">Cameroun, Yaoundé, Nkomkana</span>
+                Localisation : <span className="">Cameroun, Yaoundé, Nkomkana</span>
               </p>
             </div>
           </div>

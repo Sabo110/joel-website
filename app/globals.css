@@ -163,7 +163,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem); /* Titre section */
+  font-size: clamp(1.3rem, 3vw + 0.5rem, 2.5rem); /* Titre section */
 }
 
 h4 {

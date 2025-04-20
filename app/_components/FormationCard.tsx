@@ -18,7 +18,7 @@ export default function FormationCard({
   imageSrc,
 }: FormationCardProps) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 border border-border shadow-lg bg-background">
       {/* Image */}
       <div className="relative w-full">
         <Image
@@ -30,7 +30,7 @@ export default function FormationCard({
       </div>
 
       {/* Contenu principal */}
-      <div className="flex flex-col justify-between flex-grow">
+      <div className="flex flex-col justify-between flex-grow p-4">
         <div className="space-y-4">
           <h4 className="uppercase">
             {title}
